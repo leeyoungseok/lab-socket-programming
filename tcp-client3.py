@@ -13,6 +13,9 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((IP, TCP_PORT))
 
 while True:
+    MESSAGE = input()
+    if MESSAGE == "q":
+        break
     print("Sending")
     s.send(MESSAGE.encode('utf-8'))
     data = s.recv(BUFFER_SIZE)
