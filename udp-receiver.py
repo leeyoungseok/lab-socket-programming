@@ -16,5 +16,5 @@ while True:
     print("Received message:", data.decode('utf8'), " from ", addr)
     currentTime = " " + time.ctime(time.time()) + "\r\n"
     my_ip = myPublicIp.getPublicIp()
-    data = "MS Azure server ".encode('ascii') + my_ip.encode('ascii')  + " ".encode('ascii') + data + currentTime.encode('ascii')
+    data = "New MS Azure server ".encode('ascii') + my_ip.encode('ascii')  + " ".encode('ascii') + data + currentTime.encode('ascii')
     sock.sendto(data, addr)
