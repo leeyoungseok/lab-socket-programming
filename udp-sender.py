@@ -2,7 +2,8 @@
 import socket
 
 #UDP_IP = "127.0.0.1"
-UDP_IP = "ec2-3-34-48-61.ap-northeast-2.compute.amazonaws.com"
+#UDP_IP = "ec2-3-34-48-61.ap-northeast-2.compute.amazonaws.com"
+UDP_IP = "20.62.197.27"
 UDP_PORT = 5001
 server_addr = (UDP_IP, UDP_PORT)
 
