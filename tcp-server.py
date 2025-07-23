@@ -19,6 +19,8 @@ while 1:
      #if not data: break
      currentTime = " " + " 2025년 7월 23일 수정함." + time.ctime(time.time()) + "\r\n"
      print(data.decode('utf-8'))
-     data = data + currentTime.encode('ascii')
+     data = data + currentTime.encode('utf-8')
      conn.send(data)  # echo
+     print('Data sent back to client:', data.decode('utf-8'))
+     time.sleep(1)  # 1초 대기
      conn.close()
